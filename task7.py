@@ -11,7 +11,7 @@ import nltk
 
 nltk.download("stopwords")
 
-df=pd.read_csv(r'C:\Users\okunato oluwanifemi\Desktop\New folder (2)\New folder\saved assignments\2_count.csv')
+df=pd.read_csv(r'C:\Users\BVodka\Desktop\HNGI\TASK-7\saved assignments\2_count.csv')
 df.head()
 
 #soring df by productid
@@ -20,7 +20,7 @@ df.sort_values(["ProductId"], axis=0, ascending=True, inplace=True)
 
 #we want to know how many positive and negative reviews we have
 #we import the first sql table we created
-FILTER = pd.read_csv(r'C:\Users\okunato oluwanifemi\Desktop\New folder (2)\New folder\saved assignments\1_filter.csv')
+FILTER = pd.read_csv(r'C:\Users\BVodka\Desktop\HNGI\TASK-7\saved assignments\1_filter.csv')
 FILTER.head()
 
 #we add a column which displays which is positive and negative
