@@ -1,0 +1,8 @@
+SELECT * FROM Reviews
+WHERE Score > 3 OR Score < 3
+
+
+SELECT UserId, ProductId, ProfileName, time, Score, Text, count(*) as countt
+from result1
+GROUP by UserId
+HAVING countt > 1;
